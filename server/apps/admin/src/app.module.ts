@@ -5,12 +5,14 @@ import { DbModule } from '@libs/db';
 import { UsersModule } from './users/users.module';
 import { CoursesController } from './courses/courses.controller';
 import { CoursesModule } from './courses/courses.module';
+import { EpisodesModule } from './episodes/episodes.module';
 
 @Module({
   imports: [
     DbModule,
     UsersModule,
-    CoursesModule 
+    CoursesModule,
+    EpisodesModule 
   ],
   controllers: [AppController, CoursesController],
   providers: [AppService],
