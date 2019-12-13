@@ -26,7 +26,7 @@ class CreatPostDto {
 }
 
 @Controller('users')
-@ApiTags('视频接口')
+@ApiTags('用户接口')
 
 
 
@@ -59,7 +59,7 @@ export class UsersController {
         summary: '查看详细帖子'
     })
     async detail(@Param('id') id: string) {
-        
+
         return await  this.model.findById(id) 
         
     }

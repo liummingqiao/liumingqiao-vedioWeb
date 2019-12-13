@@ -7,11 +7,11 @@ import { Episode } from './episode.model'
     }
 })
 export class Course {
-    @ApiModelProperty({ description: '课程名称' })
+    @ApiModelProperty({ description: '课程名称',example:'user1' })
     @prop()
     name: string
 
-    @ApiModelProperty({ description: '封面图' })
+    @ApiModelProperty({ description: '封面图' ,example:'cover1'})
     @prop()
     cover: string
 
